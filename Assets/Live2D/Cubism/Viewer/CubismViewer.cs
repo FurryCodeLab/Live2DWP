@@ -14,7 +14,7 @@ using UnityEngine;
 
 
 using EventSystem = UnityEngine.EventSystems.EventSystem;
-//using Screen = UnityEngine.Screen;
+using Screen = UnityEngine.Screen;
 
 
 namespace Live2D.Cubism.Viewer
@@ -178,7 +178,7 @@ namespace Live2D.Cubism.Viewer
 
 
             // Initialize screen size.
-            //Screen.SetResolution(Config.ScreenWidth, Config.ScreenHeight, false);
+            Screen.SetResolution(Config.ScreenWidth, Config.ScreenHeight, false);
 
 
             // Initialize file dialog.
@@ -200,11 +200,11 @@ namespace Live2D.Cubism.Viewer
         /// </summary>
         private void OnDestroy()
         {
-            //Config.ScreenWidth = Screen.width;
-            //Config.ScreenHeight = Screen.height;
+            Config.ScreenWidth = Screen.width;
+            Config.ScreenHeight = Screen.height;
 
 
-            //CubismViewerIo.SaveConfig(Config);
+            CubismViewerIo.SaveConfig(Config);
         }
 
         #endregion

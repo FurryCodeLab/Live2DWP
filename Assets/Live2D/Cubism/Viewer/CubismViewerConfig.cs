@@ -22,13 +22,13 @@ namespace Live2D.Cubism.Viewer
         /// Screen width.
         /// </summary>
         [SerializeField]
-        public int ScreenWidth = 1920;
+        public int ScreenWidth = 540;
 
         /// <summary>
         /// Screen height.
         /// </summary>
         [SerializeField]
-        public int ScreenHeight = 1080;
+        public int ScreenHeight = 720;
 
         /// <summary>
         /// Last path gotten via file dialog.

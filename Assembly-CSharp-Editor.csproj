@@ -292,6 +292,9 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.0f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms">
+        <HintPath>C:/Users/lenovo/Documents/Live2DWP/Assets/Live2D/Cubism/Viewer/Plugins/System.Windows.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:/Users/lenovo/Documents/Live2DWP/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
@@ -738,6 +741,14 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{d31c2205-7698-8dd7-4a61-ac48812f4cb3}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="FFmpegOut.Editor.csproj">
+      <Project>{15e3ab10-b974-4a1c-763c-17354a37cf3d}</Project>
+      <Name>FFmpegOut.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FFmpegOut.csproj">
+      <Project>{ecde4cf4-e97e-e859-5a1b-975ce5d9db76}</Project>
+      <Name>FFmpegOut</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

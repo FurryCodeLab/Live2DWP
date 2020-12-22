@@ -38,8 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\Live2D\Cubism\Framework\ComponentExtensionMethods.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\ICubismOpacityHandler.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\PhysicsController.cs" />
      <Compile Include="Assets\Live2D\Cubism\Viewer\CubismViewerIo.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\Masking\CubismMaskController.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\CubismPartInfo.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\ObjectExtensionMethods.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\Masking\CubismMaskMaskedJunction.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Pose\CubismPoseController.cs" />
@@ -47,7 +49,7 @@
      <Compile Include="Assets\Live2D\Cubism\Framework\CubismHitDrawable.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\CubismDontMoveOnReimportAttribute.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Json\CubismModel3Json.cs" />
-     <Compile Include="Assets\SimpleAnimator.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\SimpleAnimator.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\CubismAutoEyeBlinkInput.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Json\CubismPose3Json.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Physics\CubismPhysicsRig.cs" />
@@ -82,6 +84,7 @@
      <Compile Include="Assets\Live2D\Cubism\Framework\Physics\CubismPhysicsSourceComponent.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\Unmanaged\CubismUnmanagedArrayView.cs" />
      <Compile Include="Assets\Live2D\Cubism\Samples\OriginalWorkflow\Demo\CubismLookTarget.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\CubismParameterInfo.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Json\CubismUserData3Json.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\Unmanaged\CubismUnmanagedParameters.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Motion\CubismMotionPriority.cs" />
@@ -114,6 +117,7 @@
      <Compile Include="Assets\Live2D\Cubism\Core\CubismLogging.cs" />
      <Compile Include="Assets\Live2D\Cubism\Samples\Masking\MaskTexturePreview.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Raycasting\CubismRaycaster.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\ParamSliders.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\Masking\CubismMaskRenderer.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Pose\CubismPosePart.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\Masking\CubismMaskRendererExtensionMethods.cs" />
@@ -144,6 +148,8 @@
      <Compile Include="Assets\Live2D\Cubism\Framework\MotionFade\CubismFadePlayingMotion.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Physics\CubismPhysics.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\Unmanaged\CubismUnmanagedModel.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\AutoAnimator.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\PartSliders.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\CubismBuiltinShaders.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Expression\CubismPlayingExpression.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Physics\CubismPhysicsSubRig.cs" />
@@ -151,6 +157,7 @@
      <Compile Include="Assets\Live2D\Cubism\Rendering\CubismBuiltinMaterials.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\CubismDrawable.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\CubismEyeBlinkController.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\AnimationControls.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\ICubismTask.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\ComponentExtensionMethods.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\CubismSortingMode.cs" />
@@ -169,6 +176,7 @@
      <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\CameraControls.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\MouthMovement\CubismMouthController.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\Unmanaged\CubismUnmanagedParts.cs" />
+     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Misc\LookAround.cs" />
      <Compile Include="Assets\Live2D\Cubism\Rendering\ArrayExtensionMethods.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\Expression\CubismExpressionController.cs" />
      <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Theming\TwoColorThemer.cs" />
@@ -180,14 +188,6 @@
      <Compile Include="Assets\Live2D\Cubism\Framework\Json\CubismBuiltinPickers.cs" />
      <Compile Include="Assets\Live2D\Cubism\Framework\HarmonicMotion\CubismHarmonicMotionController.cs" />
      <Compile Include="Assets\Live2D\Cubism\Core\ArrayExtensionMethods.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Misc\LookAround.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\AutoAnimator.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\CubismParameterInfo.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\PhysicsController.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\PartSliders.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\CubismPartInfo.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\ParamSliders.cs" />
-     <Compile Include="Assets\Live2D\Cubism\Viewer\Gems\Animating\AnimationControls.cs" />
      <None Include="Assets\Live2D\Cubism\Viewer\Plugins\System.Windows.Forms.txt" />
      <None Include="Assets\mcs.rsp" />
      <None Include="Assets\FFmpegOut\Resources\Preprocess.shader" />
